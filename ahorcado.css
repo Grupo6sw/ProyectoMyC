@@ -4,5 +4,8 @@
 .contenedor-letras-secreto {
     min-height: 45px;
 }
+.bg-morado {
+    background: #0000ff;
+}
 //Se realizan los cambios de estilo por clase
 
