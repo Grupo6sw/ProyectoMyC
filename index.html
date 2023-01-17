@@ -34,6 +34,17 @@
                         </div>
                         <input id="palabra_secreta" type="text" class="form-control" placeholder="Escribe la palabra secreta y pulsa Iniciar"
                             aria-describedby="label_palabra_secreta">
+                            <button id="boton_iniciar" class="btn btn-success ancho-boton">Iniciar</button>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text ancho-etiqueta bg-primary text-white"
+                                id="label_probar_letra">Letra:</span>
+                        </div>
+                        <input id="probar_letra" type="text" class="form-control" placeholder="Escribe la letra a probar"
+                            aria-describedby="label_probar_letra" maxlength="1" minlength="1" disabled>
+                        <button id="boton_probar" class="btn btn-primary ancho-boton" disabled>Probar</button>
+                    </div>
                 </div>
                 <div class="row justify-content-center">
                     <button id="boton_finalizar" class="btn btn-danger ancho-boton align-self-end">Reiniciar</button>
