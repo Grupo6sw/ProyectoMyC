@@ -30,3 +30,16 @@ $(document).ready(function () {
 
         $('#palabra_secreta').focus();
     }
+function cadenaPermitida(cadena) {
+        let expresion = '';
+
+        cadena = cadena.toLowerCase();
+        expresion = /^[a-zñ ]+$/;
+
+        if (expresion.test(cadena)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
