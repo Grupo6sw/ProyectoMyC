@@ -7,5 +7,11 @@
 .bg-morado {
     background: #612daf;
 }
-//Se realizan los cambios de estilo por clase
+.ancho-etiqueta {
+    width: 100px;
+}
+
+.ancho-boton {
+    width: 100px;
+}
 
