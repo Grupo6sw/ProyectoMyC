@@ -16,4 +16,35 @@
 .bg-morado {
     background: #612daf;
 }
-//Se realizan los cambios de estilo por clase
+.titulo-principal {
+    background: #1f1f1f;
+}
+.borde-morado {
+    border: 1px solid #612daf;
+}
+.espacio {
+    display: inline-block;    
+    width: 30px;    
+}
+
+.letra-gane {
+    background: #27a745;    
+}
+
+.letra-perdida {
+    background: #dc3645;
+}
+.letra {
+    background: #4bb7c8;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    width: 35px;
+    text-align: center;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 25px;    
+}
+//Se realizan los cambios de estilo por clase de las etiquetas
+
