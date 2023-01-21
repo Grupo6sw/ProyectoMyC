@@ -7,6 +7,9 @@
 .estilo-imagen {
     height: 290px;
 }
+.contenedor-letras {
+    min-height: 30px;
+}
 .contenedor-letras-secreto {
     min-height: 45px;
 }
