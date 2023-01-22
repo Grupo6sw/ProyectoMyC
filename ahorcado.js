@@ -62,3 +62,20 @@ function verificarLetra(letra) {
         }
     }
 
+function establecerEspacios() {
+        let html = '';
+
+        for (let i = 0; i < palabra_secreta.length; i++) {
+            if (palabra_secreta.charAt(i) == ' ') {
+                html += `
+                <span class='espacio'></span>
+                `;
+            } else {
+                html += `
+                <span class='letra'></span>
+                `;
+            }
+        }
+
+        $('#palabra').html(html);
+    }
