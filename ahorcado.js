@@ -52,3 +52,13 @@ function verificarLetraProbada(letra) {
         }
     }
 
+function verificarLetra(letra) {
+        letra = letra.toLowerCase();
+
+        if (palabra_secreta.indexOf(letra) != -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
