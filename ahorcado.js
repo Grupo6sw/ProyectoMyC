@@ -42,4 +42,13 @@ function cadenaPermitida(cadena) {
             return false;
         }
     }
+function verificarLetraProbada(letra) {
+        letra = letra.toLowerCase();
+
+        if (letras_probadas.indexOf(letra) != -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
