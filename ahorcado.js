@@ -79,3 +79,12 @@ function establecerEspacios() {
 
         $('#palabra').html(html);
     }
+function escribirSpan(indice, letra) {
+        let lista_span = $('span');
+
+        for (let i = 0; i < lista_span.length; i++) {
+            if (i == indice) {
+                lista_span[i].innerHTML = letra;
+            }
+        }
+    }
