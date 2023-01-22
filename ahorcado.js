@@ -88,3 +88,24 @@ function escribirSpan(indice, letra) {
             }
         }
     }
+
+function mostrarPalabra(opcion) {
+        let html = '';
+
+        for (let i = 0; i < palabra_secreta.length; i++) {
+
+            if (palabra_secreta.charAt(i) == ' ') {
+                html += `
+                    <span class='espacio'>${palabra_secreta.charAt(i)}</span>
+                `;
+            } else {
+                html += `
+                    <span class='letra letra-${opcion}'>${palabra_secreta.charAt(i)}</span>
+                `;
+            }
+        }
+
+        $('#palabra').html(html);
+    }
+
+
