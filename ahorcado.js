@@ -109,3 +109,56 @@ function mostrarPalabra(opcion) {
     }
 
 
+function incluirLetra(letra) {
+        let numero_span = 0;
+
+        letra = letra.toLowerCase();
+
+        for (let i = 0; i < palabra_secreta.length; i++) {
+            if (palabra_secreta.charAt(i) == letra) {
+                aciertos++;
+                escribirSpan(i, letra);
+                letras_probadas += letra;
+            }
+        }
+
+        if (aciertos == palabra_secreta.replace(new RegExp(' ', 'g'), '').length) {
+            gane();
+        }
+    }
+
+    function incluirFallo(letra) {
+        let div_letras_fallidas = $('#letras_fallidas'),
+            html = div_letras_fallidas.html();
+
+        letra = letra.toLowerCase();
+
+        fallos++;
+
+        letras_fallidas += letra;
+        letras_probadas += letra;
+	
+        if(fallos == 0){
+            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=123XEU0tV-JavXxVmk3wV42ygeW3tku1D');
+        }else if(fallos == 1){
+            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1vFdlLQjzaq5_qHzPu88rZfolqFXR1zRb');            
+        }else if(fallos == 2){
+            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1aexncQCP2hBh-7xaJvvL6YDKycmwaqWm');
+        }else if(fallos == 3){
+            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1hcwei7UOJLP1pzi38kA6LS1OOmkz5Nhw');
+        }else if(fallos == 4){
+            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=18uD0wry0bfxGaq8Qiqg3BiordCNYuGV7');
+        }        
+
+        if (html == '') {
+            html = letra;
+        } else {
+            html += '-' + letra;
+        }
+
+        div_letras_fallidas.html(html);
+
+        if (fallos == 4) {
+            perdida();
+        }
+    }
