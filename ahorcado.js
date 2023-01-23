@@ -162,3 +162,16 @@ function incluirLetra(letra) {
             perdida();
         }
     }
+
+    function gane() {
+        $('#probar_letra').attr('disabled', true);
+        $('#boton_probar').attr('disabled', true);
+
+        $('#adivinar').attr('disabled', true);
+        $('#botonadivinar').attr('disabled', true);
+
+        $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1H1nrBllxQbpBf5SAGXlUJjagsYFYW-VS');
+
+        mostrarPalabra('gane');
+    }
+})
