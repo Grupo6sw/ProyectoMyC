@@ -174,4 +174,16 @@ function incluirLetra(letra) {
 
         mostrarPalabra('gane');
     }
-})
+    function gane() {
+        $('#probar_letra').attr('disabled', true);
+        $('#boton_probar').attr('disabled', true);
+
+        $('#adivinar').attr('disabled', true);
+        $('#boton_adivinar').attr('disabled', true);
+
+        $('#imagenahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1H1nrBllxQbpBf5SAGXlUJjagsYFYW-VS');
+
+        mostrarPalabra('gane');
+    }
+
+});
