@@ -225,5 +225,55 @@ function incluirLetra(letra) {
             })
         }
     }
+        function probarLetra() {
+        let input_probar_letra = $('#probar_letra');
+
+        if (input_probar_letra.val() != ' ') {
+            if (input_probar_letra.val().length > 0) {
+                if (cadenaPermitida(input_probar_letra.val())) {
+                    if (!verificarLetraProbada(input_probar_letra.val())) {
+                        if (verificarLetra(input_probar_letra.val())) {
+                            incluirLetra(input_probar_letra.val());
+                        } else {
+                            incluirFallo(input_probar_letra.val())
+                        }
+
+                        input_probar_letra.val('');
+                        input_probar_letra.focus();
+                    } else {
+                        $('#etiqueta_mensaje').html('Datos Incorrectos');
+                        $('#cuerpo_mensaje').html('La letra ya ha sido probada.');
+                        $('#mensaje').modal('show')
+
+                        $('#mensaje').on('hidden.bs.modal', function () {
+                            input_probar_letra.val('');
+                            input_probar_letra.focus();
+                        })
+                    }
+                } else {
+                    $('#etiqueta_mensaje').html('Datos Incorrectos');
+                    $('#cuerpo_mensaje').html('Sólo se permiten caracteres de la A a la Z únicamente.');
+                    $('#mensaje').modal('show')
+
+                    $('#mensaje').on('hidden.bs.modal', function () {
+                        input_probar_letra.val('');
+                        input_probar_letra.focus();
+                    })
+                }
+            } else {
+                $('#etiqueta_mensaje').html('Datos Incorrectos');
+                $('#cuerpo_mensaje').html('Debe escribir la letra a probar.');
+                $('#mensaje').modal('show')
+
+                $('#mensaje').on('hidden.bs.modal', function () {
+                    input_palabra_secreta.focus();
+                })
+            }
+        } else {
+            input_probar_letra.val('');
+            input_probar_letra.focus();
+        }
+    }
+
 
 });
