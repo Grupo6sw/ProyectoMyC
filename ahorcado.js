@@ -274,6 +274,36 @@ function incluirLetra(letra) {
             input_probar_letra.focus();
         }
     }
+    function adivinar() {
+        let input_adivinar = $('#adivinar');
+
+        if (input_adivinar.val().length > 0) {
+            if (cadenaPermitida(input_adivinar.val())) {
+                if (input_adivinar.val().toLowerCase() == palabra_secreta) {
+                    gane();
+                } else {
+                    perdida();
+                }
+            } else {
+                $('#etiquetamensaje').html('Datos Incorrectos');
+                $('#cuerpo_mensaje').html('Sólo se permiten caracteres de la A a la Z únicamente.');
+                $('#mensaje').modal('show')
+
+                $('#mensaje').on('hidden.bs.modal', function () {
+                    input_adivinar.val('');
+                    input_adivinar.focus();
+                })
+            }
+        } else {
+            $('#etiqueta_mensaje').html('Datos Incorrectos');
+            $('#cuerpo_mensaje').html('Debe escribir la palabra a adivinar.');
+            $('#mensaje').modal('show')
+
+            $('#mensaje').on('hidden.bs.modal', function () {
+                input_adivinar.focus();
+            })
+        }
+    }
 
 
 });
