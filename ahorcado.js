@@ -304,6 +304,36 @@ function incluirLetra(letra) {
             })
         }
     }
+function finalizar() {
+        inicializar();
+    }
 
+    function main() {
+        inicializar();
+        $('#boton_iniciar').click(iniciar);
+        $('#boton_probar').click(probarLetra);
+        $('#boton_finalizar').click(finalizar);
+        $('#boton_adivinar').click(adivinar);
+
+        $('#palabrasecreta').on("keydown", function (event) {
+            if (event.which == 13) {
+                iniciar();
+            }
+        });
+
+        $('#probarletra').on("keydown", function (event) {
+            if (event.which == 13) {
+                probarLetra();
+            }
+        });
+
+        $('#adivinar').on("keydown", function (event) {
+            if (event.which == 13) {
+                adivinar();
+            }
+        });
+    }
+
+    main();
 
 });
