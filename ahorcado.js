@@ -185,5 +185,45 @@ function incluirLetra(letra) {
 
         mostrarPalabra('gane');
     }
+    function iniciar() {
+        let input_palabra_secreta = $('#palabra_secreta');
+
+        if (input_palabra_secreta.val().length > 0) {
+            if (cadenaPermitida(input_palabra_secreta.val())) {
+                palabra_secreta = input_palabra_secreta.val().toLowerCase();
+
+                input_palabra_secreta.attr("disabled", true);
+                input_palabra_secreta.attr("type", "password");
+                $('#boton_iniciar').attr("disabled", true);
+
+                $('#probar_letra').attr("disabled", false);
+                $('#boton_probar').attr("disabled", false);
+
+                $('#adivinar').attr("disabled", false);
+                $('#boton_adivinar').attr("disabled", false);
+
+                establecerEspacios();
+
+                $('#probar_letra').focus();
+            } else {
+                $('#etiqueta_mensaje').html('Datos Incorrectos');
+                $('#cuerpo_mensaje').html('La palabra debe contener caracteres de la A a la Z únicamente.');
+                $('#mensaje').modal('show')
+
+                $('#mensaje').on('hidden.bs.modal', function () {
+                    input_palabra_secreta.val('');
+                    input_palabra_secreta.focus();
+                })
+            }
+        } else {
+            $('#etiqueta_mensaje').html('Datos Incorrectos');
+            $('#cuerpo_mensaje').html('Debe escribir la palabra secreta.');
+            $('#mensaje').modal('show')
+
+            $('#mensaje').on('hidden.bs.modal', function () {
+                input_palabra_secreta.focus();
+            })
+        }
+    }
 
 });
