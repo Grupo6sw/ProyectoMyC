@@ -10,7 +10,7 @@ $(document).ready(function () {
         letras_probadas = '';
         letras_fallidas = '';
 
-        $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/131zsl2wDX_6JgqLUFWjjLQFO0OGCx7gx/view?usp=share_link');
+        $('#imagen_ahorcado').attr('src', 'img_ahorcado/no_fallos.png');
         $('#palabra').html('');
         $('#letras_fallidas').html('');
 
