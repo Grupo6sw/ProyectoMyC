@@ -139,7 +139,7 @@ function incluirLetra(letra) {
         letras_probadas += letra;
 	
         if(fallos == 0){
-            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=123XEU0tV-JavXxVmk3wV42ygeW3tku1D');
+            $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/131zsl2wDX_6JgqLUFWjjLQFO0OGCx7gx/view?usp=share_link');
         }else if(fallos == 1){
             $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1vFdlLQjzaq5_qHzPu88rZfolqFXR1zRb');            
         }else if(fallos == 2){
