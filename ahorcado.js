@@ -170,21 +170,11 @@ function incluirLetra(letra) {
         $('#adivinar').attr('disabled', true);
         $('#botonadivinar').attr('disabled', true);
 
-        $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1H1nrBllxQbpBf5SAGXlUJjagsYFYW-VS');
+        $('#imagen_ahorcado').attr('src', 'img_ahorcado/escapa.png');
 
         mostrarPalabra('gane');
     }
-    function gane() {
-        $('#probar_letra').attr('disabled', true);
-        $('#boton_probar').attr('disabled', true);
-
-        $('#adivinar').attr('disabled', true);
-        $('#boton_adivinar').attr('disabled', true);
-
-        $('#imagenahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1H1nrBllxQbpBf5SAGXlUJjagsYFYW-VS');
-
-        mostrarPalabra('gane');
-    }
+    
     function iniciar() {
         let input_palabra_secreta = $('#palabra_secreta');
 
