@@ -139,9 +139,9 @@ function incluirLetra(letra) {
         letras_probadas += letra;
 	
         if(fallos == 0){
-            $('#imagen_ahorcado').attr('src', 'img_ahorcado/no_fallos');
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/no_fallos.png');
         }else if(fallos == 1){
-            $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/1qggwKex9OyCw7Q2AwgnBi97N-5vr2KkR/view?usp=share_link');            
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/1_fallo.png');            
         }else if(fallos == 2){
             $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/1rUoXImcI1vb9UsDmAWW8XUDvi-xXdjUZ/view?usp=share_link');
         }else if(fallos == 3){
