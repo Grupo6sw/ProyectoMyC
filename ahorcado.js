@@ -143,7 +143,7 @@ function incluirLetra(letra) {
         }else if(fallos == 1){
             $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/1qggwKex9OyCw7Q2AwgnBi97N-5vr2KkR/view?usp=share_link');            
         }else if(fallos == 2){
-            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1aexncQCP2hBh-7xaJvvL6YDKycmwaqWm');
+            $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/1rUoXImcI1vb9UsDmAWW8XUDvi-xXdjUZ/view?usp=share_link');
         }else if(fallos == 3){
             $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1hcwei7UOJLP1pzi38kA6LS1OOmkz5Nhw');
         }else if(fallos == 4){
