@@ -145,7 +145,7 @@ function incluirLetra(letra) {
         }else if(fallos == 2){
             $('#imagen_ahorcado').attr('src', 'img_ahorcado/2_fallo.png');
         }else if(fallos == 3){
-            $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=1hcwei7UOJLP1pzi38kA6LS1OOmkz5Nhw');
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/3_fallo.png');
         }else if(fallos == 4){
             $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=18uD0wry0bfxGaq8Qiqg3BiordCNYuGV7');
         }        
