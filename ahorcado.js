@@ -10,7 +10,7 @@ $(document).ready(function () {
         letras_probadas = '';
         letras_fallidas = '';
 
-        $('#imagen_ahorcado').attr('src', 'http://drive.google.com/uc?export=view&id=123XEU0tV-JavXxVmk3wV42ygeW3tku1D');
+        $('#imagen_ahorcado').attr('src', 'https://drive.google.com/file/d/131zsl2wDX_6JgqLUFWjjLQFO0OGCx7gx/view?usp=share_link');
         $('#palabra').html('');
         $('#letras_fallidas').html('');
 
