@@ -168,7 +168,7 @@ function incluirLetra(letra) {
         $('#boton_probar').attr('disabled', true);
 
         $('#adivinar').attr('disabled', true);
-        $('#botonadivinar').attr('disabled', true);
+        $('#boton_adivinar').attr('disabled', true);
 
         $('#imagen_ahorcado').attr('src', 'img_ahorcado/escapa.png');
 
@@ -275,7 +275,7 @@ function incluirLetra(letra) {
                     perdida();
                 }
             } else {
-                $('#etiquetamensaje').html('Datos Incorrectos');
+                $('#etiqueta_mensaje').html('Datos Incorrectos');
                 $('#cuerpo_mensaje').html('Sólo se permiten caracteres de la A a la Z únicamente.');
                 $('#mensaje').modal('show')
 
