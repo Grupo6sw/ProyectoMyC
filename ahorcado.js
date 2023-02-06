@@ -28,7 +28,7 @@ $(document).ready(function () {
         $('#adivinar').attr("disabled", true);
         $('#boton_adivinar').attr("disabled", true);
 
-        $('#palabra_secreta').focus();
+        $('#palabrasecreta').focus();
     }
 function cadenaPermitida(cadena) {
         let expresion = '';
