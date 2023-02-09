@@ -141,13 +141,13 @@ function incluirLetra(letra) {
         if(fallos == 0){
             $('#imagen_ahorcado').attr('src', 'img_ahorcado/no_fallos.png');
         }else if(fallos == 1){
-            $('#imagen_ahorcado').attr('src', 'img_ahorcado/1_fallo.png');            
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/1_falloCOLOR.png');            
         }else if(fallos == 2){
-            $('#imagen_ahorcado').attr('src', 'img_ahorcado/2_fallo.png');
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/2_falloCOLOR.png');
         }else if(fallos == 3){
-            $('#imagen_ahorcado').attr('src', 'img_ahorcado/3_fallo.png');
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/3_falloCOLOR.png');
         }else if(fallos == 4){
-            $('#imagen_ahorcado').attr('src', 'img_ahorcado/4_fallo.png');
+            $('#imagen_ahorcado').attr('src', 'img_ahorcado/4_falloCOLOR.png');
         }        
 
         if (html == '') {
@@ -170,7 +170,7 @@ function incluirLetra(letra) {
         $('#adivinar').attr('disabled', true);
         $('#botonadivinar').attr('disabled', true);
 
-        $('#imagen_ahorcado').attr('src', 'img_ahorcado/escapa.png');
+        $('#imagen_ahorcado').attr('src', 'img_ahorcado/escapaCOLOR.png');
 
         mostrarPalabra('gane');
     }
